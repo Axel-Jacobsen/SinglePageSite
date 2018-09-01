@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <title></Title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato');
+    </style>
+</head>
+
+<body>
+    <div class="pageDiv introDiv">
+        <div class="shade positionTopLeft">
+            <h2 class="titleCard">Title</h2>
+            <p class="mainLinks">
+                <a href="#why">Why</a>
+                <a href="#components">components</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="pageDiv whyDiv" id="why">
+        <div class="vFlexOnWidth">
+            <h2 class="titleCard">Why?</h2>
+            <div class="vFlexOnWidth column halfWidth">
+                <p>
+                    This project is here to provide a backbone for websites that I would like to make. Hopefully
+                    with
+                    this
+                    backbone, creating new websites will be quick and easy.
+                </p>
+                <p>
+                    In the next section <a href="#components">'components'</a>, the components that are available
+                    for
+                    use
+                    will be listed and explained.
+                </p>
+                <p>
+                    Here is an example of the template used in full: <a href="https://axel-jacobsen.github.io/RobotSummer/">Robot
+                        Competition</a>
+                </p>
+                <p>
+                    It is obvious that there are still minor errors with the website. Any helping hands are much
+                    appreciated!
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="pageDiv componentDiv" id="components">
+        <div class="vFlexOnWidth">
+            <div class="vFlexOnWidth column verticalImageAndCaptions">
+                <h2 class="titleCard">Components</h2>
+                <img class="baseImg componentImg" src="images/alaska.jpg">
+                <i>Here is a cute little caption</i>
+            </div>
+            <div class="halfWidth">
+                <p>
+                    <pre><code>pageDiv</code></pre>
+                </p>
+                <p>
+                    is the base div; every new section of the website must have this
+                    class. For
+                    div-specific styling (such as coloring), you can add another class. For example, this section's
+                    classes are `pageDiv componentDiv`.
+                </p>
+                <p>
+                    If you want a hyperlink to a section, use
+                </p>
+                <pre><code>&lt;a href=#sectionId&gt;</code></pre>
+                <p>
+                    For example, this section is linked from the
+                    intro via
+                </p>
+                <pre><code>&lt;a href=#components&gt;</code></pre>
+                <pre><code>vFlexOnWidth</code></pre>
+                <p>is the next most important class. It gives a flex structure to your content.</p>
+                <pre><code>halfWidth</code></pre>
+                <p>
+                    lets you do stuff like this section, where half of it is a picture/caption, the other is text like
+                    this.
+                </p>
+                <p>
+                    There are a lot of other idiosyncrasies with the styles here. Take a look at the style sheet at
+                </p>
+                <pre><code>styles/scss/main.scss</code></pre>
+                <p>
+                    Here is a real example: <a href="https://axel-jacobsen.github.io/RobotSummer/">Robot Competition</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

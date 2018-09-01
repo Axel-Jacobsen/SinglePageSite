@@ -1,0 +1,223 @@
+@import 'variables';
+
+// Tag changes
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    min-width: 570px;
+}
+
+p {
+    font-size: 1.30rem;
+    line-height: 1.8;
+}
+
+a {
+    // Get rid of ugly <a> styling
+    text-decoration: none;
+    color: $titlecolor;
+}
+
+a:hover {
+    color: $titlecolor-light;
+}
+
+// div classes
+.vFlexOnWidth {
+    // 'Variable Flex on Width': change from "flex direction 'row'" to "flex direction 'column'" when going below $vFlexWidth
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%; // width: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.verticalImageAndCaptions {
+    img {
+        margin-top: 40px;
+    }
+
+    img:first-of-type {
+        margin-top: 0px;
+    }
+
+    i {
+        width: 300px;
+        color: $titlecolor-kindalight;
+    }
+}
+
+.pageDiv {
+    width: 100%;
+    height: auto; // 100%;
+    display: block;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.introDiv {
+    background-image: url('../../images/greeland.jpg');
+
+    i {
+        color: $titlecolor-light;
+    }
+
+    color: $titlecolor-light;
+    height: 100% !important;
+}
+
+.whyDiv {
+    background-color: $whyDiv-color;
+}
+
+.componentDiv {
+    background-color: $componentDiv-color;
+}
+
+.makeMeThicc {
+    width: 100%;
+}
+
+.makeMeToll {
+    height: 100%;
+}
+
+.autoHeight {
+    height: auto;
+}
+
+// Positioning
+.halfWidth {
+    width: 50%;
+}
+
+.positionTopLeft {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.rightSideText {
+    text-align: right;
+}
+
+.leftSideText {
+    text-align: left;
+}
+
+// Text styling
+.titleCard {
+    font-size: 3rem;
+    color: $titlecolor;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.mainLinks {
+    font-size: 1.5rem;
+    line-height: 1.75;
+    display: flex;
+    flex-direction: column;
+}
+
+.humanText {
+    max-width: 230px;
+}
+
+// Images
+// all images should have this class
+.baseImg {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.componentImg {
+    max-height: 1920px * 500px / 2000px;
+    max-width: 1536px * 500px / 2000px;
+}
+
+// Reactive
+.shade {
+    padding: 5px 5px 0 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: $shadeFlexWidth) {
+    .shade {
+        background-color: $titlecard-background;
+    }
+}
+
+@media screen and (max-width: $vFlexWidth) {
+    .vFlexOnWidth {
+        flex-direction: column; // align-items: center;
+        justify-content: center;
+    }
+
+    .leftSide {
+        width: 80%;
+    }
+
+    .vReverseColumn {
+        flex-direction: column-reverse;
+    }
+
+    .pageDiv {
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .introDiv {
+        height: 100%;
+    }
+
+    .titleCard {
+        margin-bottom: 30px;
+    }
+}
+
+// Some code i found on the internet
+pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+code {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+
+#content code {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #bebab0;
+}

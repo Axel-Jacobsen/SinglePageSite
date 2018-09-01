@@ -1,0 +1,205 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  min-width: 570px;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #444343;
+}
+
+a:hover {
+  color: #797878;
+}
+
+.vFlexOnWidth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.verticalImageAndCaptions img {
+  margin-top: 40px;
+}
+.verticalImageAndCaptions img:first-of-type {
+  margin-top: 0px;
+}
+.verticalImageAndCaptions i {
+  width: 300px;
+  color: #525151;
+}
+
+.pageDiv {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.introDiv {
+  background-image: url("../../images/greeland.jpg");
+  color: #797878;
+  height: 100% !important;
+}
+.introDiv i {
+  color: #797878;
+}
+
+.whyDiv {
+  background-color: #9AD1D4;
+}
+
+.componentDiv {
+  background-color: #CAD2C5;
+}
+
+.makeMeThicc {
+  width: 100%;
+}
+
+.makeMeToll {
+  height: 100%;
+}
+
+.autoHeight {
+  height: auto;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+.positionTopLeft {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.rightSideText {
+  text-align: right;
+}
+
+.leftSideText {
+  text-align: left;
+}
+
+.titleCard {
+  font-size: 3rem;
+  color: #444343;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.mainLinks {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  display: flex;
+  flex-direction: column;
+}
+
+.humanText {
+  max-width: 230px;
+}
+
+.baseImg {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+.componentImg {
+  max-height: 480px;
+  max-width: 384px;
+}
+
+.shade {
+  padding: 5px 5px 0 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1090px) {
+  .shade {
+    background-color: rgba(230, 234, 235, 0.8);
+  }
+}
+@media screen and (max-width: 900px) {
+  .vFlexOnWidth {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .leftSide {
+    width: 80%;
+  }
+
+  .vReverseColumn {
+    flex-direction: column-reverse;
+  }
+
+  .pageDiv {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .introDiv {
+    height: 100%;
+  }
+
+  .titleCard {
+    margin-bottom: 30px;
+  }
+}
+pre {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+code {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background: #faf8f0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+}
+
+#content code {
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px solid #bebab0;
+}
+
+/*# sourceMappingURL=main.css.map */
